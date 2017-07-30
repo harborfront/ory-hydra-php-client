@@ -21,11 +21,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+      "url": "https://github.com/harborfront/ory-hydra-php-client.git"
     }
   ],
   "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
+    "harborfront/ory-hydra-php-client": "*@dev"
   }
 }
 ```
@@ -61,7 +61,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Ory\Hydra\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 $api_instance = new Ory\Hydra\Api\ClientsApi();
-$body = new \Ory\Hydra\Model\OauthClient(); // \Ory\Hydra\Model\OauthClient | 
+$body = new \Ory\Hydra\Model\OauthClient(); // \Ory\Hydra\Model\OauthClient |
 
 try {
     $result = $api_instance->createOAuthClient($body);
@@ -84,7 +84,7 @@ Class | Method | HTTP request | Description
 *ClientsApi* | [**getOAuthClient**](docs/Api/ClientsApi.md#getoauthclient) | **GET** /clients/{id} | Fetches an OAuth 2.0 Client.
 *ClientsApi* | [**listOAuthClients**](docs/Api/ClientsApi.md#listoauthclients) | **GET** /clients | Lists OAuth 2.0 Clients
 *ClientsApi* | [**updateOAuthClient**](docs/Api/ClientsApi.md#updateoauthclient) | **PUT** /clients/{id} | Updates an OAuth 2.0 Client
-*DefaultApi* | [**health**](docs/Api/DefaultApi.md#health) | **GET** /health | 
+*DefaultApi* | [**health**](docs/Api/DefaultApi.md#health) | **GET** /health |
 *GroupsApi* | [**addMembersToGroup**](docs/Api/GroupsApi.md#addmemberstogroup) | **POST** /warden/groups/{id}/members | Add members to a group
 *GroupsApi* | [**createGroup**](docs/Api/GroupsApi.md#creategroup) | **POST** /warden/groups | Create a group
 *GroupsApi* | [**deleteGroup**](docs/Api/GroupsApi.md#deletegroup) | **DELETE** /warden/groups/{id} | Delete a group by id
@@ -189,7 +189,7 @@ Class | Method | HTTP request | Description
 - **Type**: OAuth
 - **Flow**: accessCode
 - **Authorization URL**: /oauth2/auth
-- **Scopes**: 
+- **Scopes**:
  - **hydra.clients**: A scope required to manage OAuth 2.0 Clients
  - **hydra.groups**: A scope required to manage warden groups
  - **hydra.keys.create**: A scope required to create JSON Web Keys
@@ -205,5 +205,3 @@ Class | Method | HTTP request | Description
 ## Author
 
 hi@ory.am
-
-

@@ -1,14 +1,14 @@
 {
-    "name": "GIT_USER_ID/GIT_REPO_ID",
+    "name": "harborfront/ory-hydra-php-client",
     "description": "",
     "keywords": [
-        "swagger",
-        "php",
+        "ory",
+        "hydra",
         "sdk",
         "api"
     ],
-    "homepage": "http://swagger.io",
-    "license": "proprietary",
+    "homepage": "http://github.com/ory/hydra",
+    "license": "apache-2.0",
     "authors": [
         {
             "name": "Swagger and contributors",
